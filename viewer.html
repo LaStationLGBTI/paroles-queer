@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paroles Queer — Viewer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pq-viewer-body">
+<div class="pq-viewer" id="pq-viewer-root">
+  <div class="pq-topbar">
+    <a class="pq-back-link" id="pq-back-link" href="index.html">&larr; <span id="pq-back-link-label">Retour</span></a>
+    <div class="pq-topbar-title" id="pq-topbar-title">Paroles Queer</div>
+    <span class="pq-fr-only" id="pq-fr-only-note"></span>
+    <span class="pq-page-indicator" id="pq-page-indicator"></span>
+    <button id="pq-zoom-btn" type="button" title="Zoom" aria-label="Zoom">&#128269;</button>
+    <button id="pq-fullscreen-btn" type="button" title="Fullscreen" aria-label="Fullscreen">&#10021;</button>
+    <div class="pq-lang-toggle" role="group" aria-label="Language">
+      <button id="pq-lang-fr" type="button">FR</button>
+      <button id="pq-lang-en" type="button">EN</button>
+    </div>
+  </div>
+
+  <div class="pq-stage" id="pq-stage">
+    <button class="pq-nav-arrow pq-nav-prev" id="pq-nav-prev" aria-label="Previous">&#8249;</button>
+    <button class="pq-nav-arrow pq-nav-next" id="pq-nav-next" aria-label="Next">&#8250;</button>
+  </div>
+
+  <div class="pq-thumbstrip" id="pq-thumbstrip"></div>
+</div>
+
+<script src="data/issues.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/viewer.js"></script>
+</body>
+</html>
